@@ -1,6 +1,8 @@
 # connect-four
 connect four game
 
+This is my web app version of the game connect four.
+
 How to start app:
 
 1: clone repository and cd into it
