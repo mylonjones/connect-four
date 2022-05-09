@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: greenyellow;
+}
+
+
+.red {background:radial-gradient(circle, rgba(249,110,110,1) 20%, black 100%);}
+.blue {background:radial-gradient(circle, rgba(61,226,255,1) 20%, black 100%);}
+.none {background-color: var(--main-background-color);}
+
+.box {
+    border-style: solid;
+    width: 90px;
+    height: 90px;
+    border-color: #737325;
+    border-width: 6px;
+    margin: -3px;
+}
+.wrapper1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.circle {
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.board {
+  font-size: 20px;
+  background-color: var(--main-background-color);
+  color: var(--text-color);
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  border-radius: 70px;
+  padding: 20px;
+  animation: color-change linear 4s infinite;
+}
+
+.gameHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+@media (max-width: 805px) {
+  .box {
+    width: 10vw;
+    height: 10vw;
+    border-width: 1vw;
+    margin: -0.5vw;
+    display: flex;
+    justify-content: center;
+  }
+  .circle {
+      margin: auto;
+      width: 7vw;
+      height: 7vw;
+  }
+
+  .board {
+    width: 80vw;
+    margin: auto;
+    position: relative;
+  }
+
+  .gameHeader {
+    font-size: 4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+}
